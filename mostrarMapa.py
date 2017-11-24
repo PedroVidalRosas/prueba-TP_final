@@ -1,3 +1,6 @@
+import indexDeLetra
+import niveles
+
 def convertirMapaEnUnaListaDeCadenas(life):
     # convierto el mapa de lista de lista en una lista de cadenas['  '.'  ']
     mapaListaDeCadenas = []
@@ -12,28 +15,17 @@ def convertirMapaEnUnaListaDeCadenas(life):
 
 def mostrarmapa(mapa):
     for x in range(len(mapa)):
-        print(mapa[x])
+        print(x+1,'|', mapa[x])
 
-letras = "ABCDEFGHIJ"
+def interfazGrafica(mapa):
 
-mapa = [
-    ["0","0",".","0"],
-    [".",".","0","."]
-]
-letralista= []
+    #letraLista va a ser el index "ABCDE" que se muestra arriba del mapa
+    letralista = indexDeLetra.indexLetras(mapa)
 
-for x in range(0,len(mapa[0])):
-    letralista.append(letras[x])
-    letralista.append(' ')
+    mapa = convertirMapaEnUnaListaDeCadenas(mapa)
 
-letralista = ''.join(letralista)
-mapa = convertirMapaEnUnaListaDeCadenas(mapa)
+    print("   ",letralista)
+    mostrarmapa(mapa)
 
-p = []
-for index,item in enumerate(mapa,1):
-    o = []
-    o.append(index)
-    o.append(item)
-    p.append(o)
-print("    ",letralista)
-mostrarmapa(p)
+mapa = niveles.nivel3D(0)
+interfazGrafica(mapa)

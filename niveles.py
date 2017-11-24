@@ -1,6 +1,4 @@
 
-
-
 def nivel3D(nivel):
     mapa = [
         [
