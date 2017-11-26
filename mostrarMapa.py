@@ -27,5 +27,5 @@ def interfazGrafica(mapa):
     print("   ",letralista)
     mostrarmapa(mapa)
 
-mapa = niveles.nivel3D(0)
+mapa = niveles.nivel3D(2)
 interfazGrafica(mapa)
