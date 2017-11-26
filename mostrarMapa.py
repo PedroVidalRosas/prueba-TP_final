@@ -13,6 +13,16 @@ def convertirMapaEnUnaListaDeCadenas(life):
         mapaListaDeCadenas.append(''.join(listaAux))
     return mapaListaDeCadenas
 
+def mostrarIndexLetra(letras):
+    listaAux= []
+    for x in range(len(letras)):
+
+        listaAux.append(letras[x])
+        listaAux.append(' ')
+    listaAux = ''.join(listaAux)
+    print("   ",listaAux)
+
+
 def mostrarmapa(mapa):
     for x in range(len(mapa)):
         print(x+1,'|', mapa[x])
@@ -24,8 +34,9 @@ def interfazGrafica(mapa):
 
     mapa = convertirMapaEnUnaListaDeCadenas(mapa)
 
-    print("   ",letralista)
+    mostrarIndexLetra(letralista)
+
     mostrarmapa(mapa)
 
-mapa = niveles.nivel3D(2)
+mapa = niveles.niveles(2)
 interfazGrafica(mapa)
