@@ -1,4 +1,5 @@
 import eleccionDelMenuPrincipal
+import modoPredeterminado
 
 def mensajeDeBienvenida():
     print("Bienvenido al juedo de Pedro")

@@ -38,5 +38,3 @@ def interfazGrafica(mapa):
 
     mostrarmapa(mapa)
 
-mapa = niveles.niveles(2)
-interfazGrafica(mapa)
