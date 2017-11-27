@@ -8,7 +8,7 @@ def indexLetras(mapa):
     letras = "ABCDEFGHIJ"
     letralista= []
 
-    if len(mapa[0]) <= 10:
+    if len(mapa[0]) <= len(letras):
 
         for x in range(0,len(mapa[0])):
             letralista.append(letras[x])

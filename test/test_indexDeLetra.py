@@ -3,12 +3,13 @@ import unittest
 
 class indexDeLetraTest(unittest.TestCase):
 
-    def testindexDeLetraTestRecibeUnLongitudDeUnMapaIgualANueveDebeDevolvverUnaListaABCDEFGHIJ(self):
-        mapa = [["a","a","a","a","a","a","a","a","a","a"]]
+    def testindexDeLetraRecibeUnaLongitudDeUNmapaDeDiezDebeDevolverUnalistaVacia(self):
+
+        mapa = [["a","a","a","a","a","a","a","a","a","a","a"]]
 
         resultado = indexDeLetra.indexLetras(mapa)
 
-        self.assertEqual(resultado,'ABCDEFGHIJ')
+        self.assertEqual(resultado,[])
 
     def testindexDeLetraRecibeUnaLongitudDeUnMapaDeCuatroDebeDevolverUnaListaABCDE(self):
 
@@ -26,11 +27,11 @@ class indexDeLetraTest(unittest.TestCase):
 
         self.assertEqual(resultado,'A')
 
-    def indexDeLetraRecibeUnaLongitudDeUNmapaDeDiezDebeDevolverUnalistaVacia(self):
-
-        mapa = [["a","a","a","a","a","a","a","a","a","a","a"]]
+    def testindexDeLetraTestRecibeUnLongitudDeUnMapaIgualANueveDebeDevolvverUnaListaABCDEFGHIJ(self):
+        mapa = [["a","a","a","a","a","a","a","a","a","a"]]
 
         resultado = indexDeLetra.indexLetras(mapa)
 
-        self.assertEqual(resultado,[])
+        self.assertEqual(resultado,'ABCDEFGHIJ')
+
 
