@@ -18,6 +18,4 @@ def menuPrincipal():
 
     if eleccion == 3:
         print("Saliste del Juego de Pedro")
-
-
 menuPrincipal()
