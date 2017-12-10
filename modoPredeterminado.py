@@ -11,7 +11,7 @@ def juegopredeterminado():
     puntosNivel = []
     puntos = 0
     nivel = 1
-    while nivel != 2:
+    while nivel != 6:
 
         mapa = niveles.niveles((nivel)-1)
         movimientos = (len(mapa))*3

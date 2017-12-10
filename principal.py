@@ -17,7 +17,7 @@ def menuPrincipal():
         mensajeDeBienvenida()
         eleccion = eleccionDelMenuPrincipal.eleccionDelMenuPrincipal(input())
         if eleccion== 1:
-            ganador = modoPredeterminado.juegopredeterminado()
+            modoPredeterminado.juegopredeterminado()
         if eleccion == 2:
            print("esre modo esta en construccion")
 
