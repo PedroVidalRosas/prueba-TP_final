@@ -16,4 +16,4 @@ def indexLetras(mapa):
 
     else:
         return []
-    return letralista
+    return letralista  

@@ -4,6 +4,7 @@ import modificarMapaSegunPosicionDeColumnaFila
 
 
 
+
 def modificarMapa(mapa):
 
     posicionColumna = elejirColumna.elejirColumna(mapa)

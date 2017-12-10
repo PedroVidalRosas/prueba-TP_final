@@ -3,4 +3,4 @@ def eleccionDelMenuPrincipal(eleccion):
     for x in range(len(menu)):
         if menu[x] == eleccion:
             return int(eleccion)
-    return 3
+    return 10
