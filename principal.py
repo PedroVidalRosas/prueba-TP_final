@@ -17,7 +17,8 @@ def menuPrincipal():
         mensajeDeBienvenida()
         eleccion = eleccionDelMenuPrincipal.eleccionDelMenuPrincipal(input())
         if eleccion== 1:
-            modoPredeterminado.juegopredeterminado()
+            usuario = modoPredeterminado.juegopredeterminado()
+            print("\n ganaste \n")
         if eleccion == 2:
            print("esre modo esta en construccion")
 

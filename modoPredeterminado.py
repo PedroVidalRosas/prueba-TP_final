@@ -14,7 +14,7 @@ def juegopredeterminado():
     while nivel != 6:
 
         mapa = niveles.niveles((nivel)-1)
-        movimientos = (len(mapa))*3
+        movimientos =  len(mapa)*3
         while movimientos > 0:
 
             if puntos < 0:
@@ -50,13 +50,11 @@ def juegopredeterminado():
                 nivel += 1
                 puntos += 500
                 puntosNivel = puntosPorCadaNivel.puntosPorCadaNivel(puntosNivel,puntos)
-                print(puntosNivel)
                 print("Paso de nivel ubtuvo: ", str(puntosNivel[nivel - 2]))
                 break
 
 
-            if movimientos < 0:
-                break
-
+        if nivel == 6:
+            return puntosNivel
 
 

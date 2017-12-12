@@ -28,7 +28,7 @@ def mostrarmapa(mapa):
 
 def interfazGrafica(mapa,nivel,movimientos,puntos):
     print("     Nivel: " + str(nivel))
-    print("movimientos: " + str(movimientos) + " puntos: " + str(puntos))
+    print("movimientos: " + str(movimientos) + " Puntos Total: " + str(puntos))
 
     #letraLista va a ser el indice "ABCDE" que se muestra arriba del mapa
     letralista = indexDeLetra.indexLetras(mapa)
