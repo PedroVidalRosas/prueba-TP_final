@@ -1,6 +1,7 @@
 import eleccionDelMenuPrincipal
 import modoPredeterminado
 import GuardarUsuariosGanadores
+import mostrarGanadores
 
 def mensajeDeBienvenida():
     print("Bienvenido al juedo de Pedro")
@@ -27,7 +28,7 @@ def menuPrincipal():
            print("esre modo esta en construccion")
 
         if eleccion == 3:
-            print("Saliste del Juego de Pedro")
+            mostrarGanadores.mostrarGanadores()
 
         if eleccion == 4:
             print("Saliste del Juego de Pedro")
