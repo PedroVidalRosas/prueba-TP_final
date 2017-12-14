@@ -1,5 +1,6 @@
 import eleccionDelMenuPrincipal
 import modoPredeterminado
+import GuardarUsuariosGanadores
 
 def mensajeDeBienvenida():
     print("Bienvenido al juedo de Pedro")
@@ -7,7 +8,8 @@ def mensajeDeBienvenida():
     print("Si ingresa una opcion invalida saldra del juego")
     print("1 para jugar en modo PREDETERMINADO")
     print("2 para jugar en mmodo ALEATORIO")
-    print("3 para salir")
+    print("3 mostrar ganadores")
+    print("4 para salir")
 
 def menuPrincipal():
 
@@ -17,11 +19,16 @@ def menuPrincipal():
         mensajeDeBienvenida()
         eleccion = eleccionDelMenuPrincipal.eleccionDelMenuPrincipal(input())
         if eleccion== 1:
-            usuario = modoPredeterminado.juegopredeterminado()
-            print("\n ganaste \n")
+            usuario,validacion = modoPredeterminado.juegopredeterminado()
+            print("\n Ganaste \n")
+            GuardarUsuariosGanadores.guardarDatos(usuario,validacion)
+
         if eleccion == 2:
            print("esre modo esta en construccion")
 
         if eleccion == 3:
+            print("Saliste del Juego de Pedro")
+
+        if eleccion == 4:
             print("Saliste del Juego de Pedro")
 menuPrincipal()

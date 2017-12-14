@@ -23,7 +23,6 @@ def juegopredeterminado():
                 nivel = 1
                 break
 
-
             puntosPorRsetear = resetear.resetearMapa(mapa)
 
             mostrarMapa.interfazGrafica(mapa,nivel,movimientos,puntos)
@@ -55,6 +54,6 @@ def juegopredeterminado():
 
 
         if nivel == 6:
-            return puntosNivel
+            return puntosNivel,True
 
 
